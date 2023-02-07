@@ -1,0 +1,143 @@
+body {
+  background-image: url(./assets/home-bg-mobile.png);
+}
+
+.headline {
+  width: 100%;
+  height: auto;
+  margin: 2em 0;
+}
+
+.headline__greetings-heading {
+  color: var(--color-secondary);
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0.5em;
+}
+
+.headline__main-heading {
+  position: relative;
+  margin: 0 1em;
+}
+
+.headline__main-heading img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  mix-blend-mode: lighten;
+  height: 100%;
+}
+
+.headline-description {
+  padding: 1em;
+  margin: 1.5em 1em;
+  background-color: var(--color-tertiary);
+  border: 3px solid white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.headline-date {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0 0.5em;
+}
+
+.headline-address {
+  font-size: 1rem;
+  padding: 0.5em 0;
+  margin: 0 1em;
+}
+
+/* Headline Styles Ends Here */
+
+/* Program Section Starts Here */
+.program {
+  margin-top: 5em;
+  background-color: var(--color-primary);
+  padding: 4em 1em 1em 1em;
+  color: var(--color-tertiary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.program__heading {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.program-item {
+  padding: 1em 1.5em;
+  margin: 0.75em 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 0.4fr 1fr 3fr;
+  align-items: center;
+}
+
+.program i {
+  justify-self: center;
+  align-content: flex-end;
+  align-self: center;
+}
+
+.program-item h4 {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* Program Section Ends Here */
+
+/* Speakers section Starts Here */
+.speakers-container {
+  padding: 3em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.speakers-container hr {
+  margin: 0.5em 0 1em 0;
+  width: 1.5em;
+  border: none;
+  border-bottom: 0.5px solid var(--color-tertiary);
+}
+
+.featured-speakers {
+  width: 100%;
+}
+
+.featured-speaker {
+  background-color: #d4cbca;
+  padding: 0 1em;
+  margin: 2em 0;
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: 0.5fr 2fr;
+  align-items: center;
+}
+
+.featured-speaker img {
+  height: 100%;
+  max-height: 200px;
+  width: auto;
+}
+
+.featured-speaker__name {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.featured-speaker__designation {
+  font-style: italic;
+  color: var(--color-secondary);
+}
+
+/* Speakers section Ends Here */

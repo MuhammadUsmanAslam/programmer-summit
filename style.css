@@ -1,3 +1,178 @@
-body {
-  color: #000;
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color-primary: #272a31;
+  --color-primary-light: #8f8f8f;
+  --color-secondary: #ec5242;
+  --color-tertiary: #d3d3d3;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "lato", sans-serif;
+}
+
+p {
+  line-height: 1.75;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+hr {
+  margin: 1em 0;
+  width: 2.5em;
+  border: none;
+  border-bottom: 0.5px solid var(--color-secondary);
+}
+
+body {
+  color: var(--color-primary);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+button {
+  padding: 2em 3em;
+  border: none;
+  background-color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  margin: 3em 0;
+}
+
+header {
+  padding: 2em 1em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Headline Styles Starts Here */
+.headline {
+  width: 100%;
+  height: auto;
+  margin: 2em 0;
+}
+
+.headline__greetings-heading {
+  color: var(--color-secondary);
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0.5em;
+}
+
+.headline__main-heading {
+  position: relative;
+  margin: 0 1em;
+}
+
+.headline__main-heading h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.headline__main-heading img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  mix-blend-mode: lighten;
+  height: 100%;
+}
+
+.headline-description {
+  padding: 1em;
+  margin: 1.5em 1em;
+  background-color: var(--color-tertiary);
+  border: 3px solid white;
+  font-weight: 700;
+}
+
+.headline-date {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0 0.5em;
+}
+
+.headline-address {
+  font-size: 1rem;
+  padding: 0.5em 0;
+  margin: 0 1em;
+}
+
+/* Headline Styles Ends Here */
+
+/* Partners section Starts Here */
+.partners {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.partners h3 {
+  color: white;
+}
+
+.partners__body {
+  padding: 3em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partners img {
+  height: 75px;
+  width: auto;
+}
+
+/* Partners section Ends Here */
+
+/* Footer Starts Here */
+footer {
+  width: 100%;
+  padding: 5em 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-body {
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-body__heading {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* Footer Ends Here */
