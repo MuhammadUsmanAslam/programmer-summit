@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/4e655bdddb.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./index.css">
     <!-- Fontawesome Icons -->
@@ -16,10 +16,32 @@
 <body>
     <!-- Header Section Starts Here -->
     <header>
-        <img src="./assets/menu-mobile.png" alt="">
+        <img id="menu-icon" class="menu-icon menu-icon--hide" src="./assets/menu-mobile.png" alt="">
+
+        <ul class="header-head">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">My Page</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+
+        <nav id="navbar" class="header-body">
+            <i id="mobile-menu-close-icon" class="mobile-menu-close-icon fa-solid fa-x"></i>
+            <a class="logo" href="/index.html"><img src="./assets/logo-dark.png" alt="logo"></a>
+            <ul>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="">Programe</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Sponsor</a></li>
+                <li><a href="">News</a></li>
+                <li><a href=""><button class="header-btn">CC Campaign</button></a></li>
+            </ul>
+        </nav>
+
     </header>
     <!-- Header Section Ends Here -->
-    
+
     <!-- Headline Section Starst Here -->
     <section class="headline">
         <h6 class="headline__greetings-heading">"Hello! Sharing world"</h6>
@@ -28,9 +50,7 @@
             <img src="./assets/heading-bg.jpeg" alt="">
         </div>
         <p class="headline-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus
-            sequi officiis incidunt odio libero a neque magnam voluptatum expedita eaque, sunt voluptatibus ab!
-            Accusamus expedita velit vitae quasi.
-            Nulla quisquam autem, in, magnam fugiat porro iure.</p>
+            sequi officiis incidunt odio libero a neque magnam voluptatum expedita eaque.</p>
         <h2 class="headline-date">2023.10.15(THU) ~ 16(FRI)</h2>
         <h6 class="headline-address">@ National Museum of Korea, Art center Nabi and more</h6>
     </section>
@@ -41,30 +61,30 @@
         <h3 class="program__heading">Main Program</h3>
         <hr>
         <ul class="program-items">
-            <li class="program-item"><i class="fa-brands fa-github"></i>
+            <li class="program-item">
+                <img src="./assets/program/lecture.png" alt="">
                 <h4>Lecture</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi officiis
-                    incidunt odio libero a neque magnam voluptatum expedita eaque,</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi.</p>
             </li>
-            <li class="program-item"><i class="fa-brands fa-github"></i>
+            <li class="program-item">
+                <img src="./assets/program/exhibition.png" alt="">
                 <h4>CC Exhibition</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi officiis
-                    incidunt odio libero a neque magnam voluptatum expedita eaque,</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi.</p>
             </li>
-            <li class="program-item"><i class="fa-brands fa-github"></i>
+            <li class="program-item">
+                <img src="./assets/program/chat.png" alt="">
                 <h4>Forum</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi officiis
-                    incidunt odio libero a neque magnam voluptatum expedita eaque,</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi.</p>
             </li>
-            <li class="program-item"><i class="fa-brands fa-github"></i>
+            <li class="program-item">
+                <img src="./assets/program/workshop.png" alt="">
                 <h4>Workshop</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi officiis
-                    incidunt odio libero a neque magnam voluptatum expedita eaque,</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi.</p>
             </li>
-            <li class="program-item"><i class="fa-brands fa-github"></i>
+            <li class="program-item">
+                <img src="./assets/program/network.png" alt="">
                 <h4>CC Ignite</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi officiis
-                    incidunt odio libero a neque magnam voluptatum expedita eaque,</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi.</p>
             </li>
         </ul>
         <button>Join CC Global Summit 2023</button>
@@ -77,40 +97,81 @@
         <hr>
         <ul class="featured-speakers">
             <li class="featured-speaker">
-                <img src="./assets/dummy-dp.jpeg" alt="">
+                <div class="featured-speaker-profile-container">
+                    <img src="./assets/speakers/ken_thompson.jpg" alt="">
+                </div>
                 <div class="featured-speaker__info">
-                    <h4 class="featured-speaker__name">Usman Aslam</h4>
-                    <p class="featured-speaker__designation">Jr. Reactjs Developer at Apple .Inc</p>
+                    <h4 class="featured-speaker__name">Ken Thompson</h4>
+                    <p class="featured-speaker__designation">American computer designer</p>
                     <hr>
-                    <p class="featured-speaker__about">I was awaded scholaship of nothing at the annual dinner at no
-                        where.
-                        I still not thankful to anyone</p>
+                    <p class="featured-speaker__about">Kenneth Lane Thompson is an American pioneer of computer science.
+                    </p>
                 </div>
             </li>
 
             <li class="featured-speaker">
-                <img src="./assets/dummy-dp.jpeg" alt="">
+                <div class="featured-speaker-profile-container">
+                    <img src="./assets/speakers/Radia-Perlman.jpg" alt="">
+                </div>
                 <div class="featured-speaker__info">
-                    <h4 class="featured-speaker__name">Usman Aslam</h4>
-                    <p class="featured-speaker__designation">Jr. Reactjs Developer at Apple .Inc</p>
+                    <h4 class="featured-speaker__name">Radia Perlman</h4>
+                    <p class="featured-speaker__designation">American network engineer</p>
                     <hr>
-                    <p class="featured-speaker__about">I was awaded scholaship of nothing at the annual dinner at no
-                        where.
-                        I still not thankful to anyone</p>
+                    <p class="featured-speaker__about">Radia Joy Perlman is an American computer programmer and network engineer.</p>
                 </div>
             </li>
 
             <li class="featured-speaker">
-                <img src="./assets/dummy-dp.jpeg" alt="">
+                <div class="featured-speaker-profile-container">
+                    <img src="./assets/speakers/Dennis_Ritchie.jpg" alt="">
+                </div>
                 <div class="featured-speaker__info">
-                    <h4 class="featured-speaker__name">Usman Aslam</h4>
-                    <p class="featured-speaker__designation">Jr. Reactjs Developer at Apple .Inc</p>
+                    <h4 class="featured-speaker__name">Dennis Ritchie</h4>
+                    <p class="featured-speaker__designation">American computer scientist</p>
                     <hr>
-                    <p class="featured-speaker__about">I was awaded scholaship of nothing at the annual dinner at no
-                        where.
-                        I still not thankful to anyone</p>
+                    <p class="featured-speaker__about">Dennis MacAlistair Ritchie was an American computer scientist.
+                    </p>
                 </div>
             </li>
+
+            <li class="featured-speaker">
+                <div class="featured-speaker-profile-container">
+                    <img src="./assets/speakers/Larry_Page.jpg" alt="">
+                </div>
+                <div class="featured-speaker__info">
+                    <h4 class="featured-speaker__name">Larry Page</h4>
+                    <p class="featured-speaker__designation">American business magnate</p>
+                    <hr>
+                    <p class="featured-speaker__about">Lawrence Edward Page is an American business magnate, computer
+                        scientist and internet entrepreneur.</p>
+                </div>
+            </li>
+
+            <li class="featured-speaker">
+                <div class="featured-speaker-profile-container">
+                    <img src="./assets/speakers/Brendan_Eich.jpg" alt="">
+                </div>
+                <div class="featured-speaker__info">
+                    <h4 class="featured-speaker__name">Brendan Eich</h4>
+                    <p class="featured-speaker__designation">American computer programmer</p>
+                    <hr>
+                    <p class="featured-speaker__about">Brendan Eich is an American computer programmer and technology
+                        executive.</p>
+                </div>
+            </li>
+
+            <li class="featured-speaker">
+                <div class="featured-speaker-profile-container">
+                    <img src="./assets/speakers/Margaret_Hamilton.jpg" alt="">
+                </div>
+                <div class="featured-speaker__info">
+                    <h4 class="featured-speaker__name">Margaret Hamilton</h4>
+                    <p class="featured-speaker__designation">American computer scientist</p>
+                    <hr>
+                    <p class="featured-speaker__about">Margaret Heafield Hamilton is an American computer scientist.</p>
+                </div>
+            </li>
+
         </ul>
     </section>
     <!-- Featured Speakers Ends Here -->
@@ -132,14 +193,19 @@
     <!-- Footer Section Starts Here -->
     <footer>
         <div class="footer__logo">
-            <img src="./assets/logo-footer.png" alt="logo">
+            <img src="./assets/logo-light.png" alt="logo">
         </div>
         <div class="footer-body">
             <h6 class="footer-body__heading">2015 Creative commons Korea, Some Rights Reserved</h6>
-            <!-- <p class="footer-body__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error asperiores nemo sint ipsa suscipit animi.</p> -->
+            <p class="footer-body__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+                asperiores nemo sint ipsa suscipit animi.</p>
         </div>
     </footer>
     <!-- Footer Section Ends Here -->
+
+    <!-- JavaScript Souces Starts -->
+    <script src="./mobile-menu.js"></script>
+    <!-- JavaScript Souces Ends -->
 </body>
 
 </html>

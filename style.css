@@ -14,6 +14,11 @@
   font-family: "lato", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 p {
   line-height: 1.75;
 }
@@ -54,9 +59,65 @@ button {
   margin: 3em 0;
 }
 
+/* Header Styles Starts Here */
+
 header {
-  padding: 2em 1em;
+  position: relative;
 }
+
+.menu-icon {
+  margin: 7.5% 0 0 7.5%;
+}
+
+.header-head {
+  display: none;
+}
+
+.header-body {
+  display: none;
+}
+
+.header-body--show {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(236, 82, 66, 0.8);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em 1em;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-body--show .logo {
+  content: url(./assets/logo-light.png);
+}
+
+.header-body--show > i {
+  font-size: 1.5rem;
+  color: white;
+  margin: 1.25em 1em;
+  align-self: flex-end;
+}
+
+.header-body--show .header-btn {
+  display: none;
+}
+
+.header-body--show > ul > li {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 0.5em 0;
+  color: white;
+}
+
+.header-body--show > ul > li:hover {
+  color: var(--color-secondary);
+}
+
+/* Header Styles Ends Here */
 
 section {
   display: flex;
@@ -175,4 +236,100 @@ footer {
   text-align: center;
 }
 
+.footer-body__description {
+  display: none;
+}
+
 /* Footer Ends Here */
+
+@media only screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    background-color: white;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .header-head {
+    background-color: var(--color-primary);
+    padding: 0.25em 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .header-head li {
+    margin: 0 0 0 1em;
+    color: white;
+  }
+
+  .header-body {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-body .logo img {
+    height: 50px;
+    max-height: 50px;
+  }
+
+  .header-body ul {
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+  }
+
+  .header-body ul li {
+    padding-left: 2em;
+  }
+
+  .header-body .mobile-menu-close-icon {
+    display: none;
+  }
+
+  .header-btn {
+    margin: 0;
+    padding: 0.5em;
+    background-color: white;
+    color: var(--color-secondary);
+    border: 5px solid var(--color-secondary);
+  }
+
+  /* Header Styles Ends Here */
+
+  /* Partners section Starts Here */
+  .partners {
+    display: none;
+  }
+
+  /* Partners section Ends Here */
+
+  /* Footer Starts Here */
+  footer {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 4em 10%;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+  }
+
+  .footer-body {
+    color: var(--color-primary-light);
+  }
+
+  .footer-body__heading {
+    text-align: left;
+  }
+
+  .footer-body__description {
+    margin-top: 0.5em;
+    display: block;
+  }
+
+  /* Footer Ends Here */
+}
