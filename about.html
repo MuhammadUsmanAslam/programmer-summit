@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./about.css">
     <!-- Fontawesome Icons -->
     <script src="https://kit.fontawesome.com/4e655bdddb.js" crossorigin="anonymous"></script>
-    <title>Programmer Summit</title>
+    <title>About | Programmer Summit</title>
 </head>
 
 <body>
     <!-- Header Section Starts Here -->
     <header>
-        <img id="menu-icon" class="menu-icon menu-icon--hide" src="./assets/menu-mobile.png" alt="">
-
+        <img id="menu-icon" class="menu-icon" src="./assets/menu-mobile.png" alt="">
         <ul class="header-head">
             <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -47,60 +45,59 @@
         <!-- Headline Section Starst Here -->
         <section class="headline">
             <h6 class="headline__greetings-heading">"Hello! Sharing world"</h6>
-            <div class="headline__main-heading">
-                <h1>Programmer Summit 2023</h1>
-                <img src="./assets/heading-bg.jpeg" alt="">
-            </div>
+            <h1 class="headline__main-heading">Programmer Summit 2023</h1>
             <p class="headline-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus
                 minus
-                sequi officiis incidunt odio libero a neque magnam voluptatum expedita eaque.</p>
-            <h2 class="headline-date">2023.10.15(THU) ~ 16(FRI)</h2>
-            <h6 class="headline-address">@ National Museum of Korea, Art center Nabi and more</h6>
+                sequi officiis incidunt odio libero a neque magnam voluptatum expedita eaque, sunt voluptatibus ab!
+                Accusamus expedita velit vitae quasi.
+                Nulla quisquam autem, in, magnam fugiat porro iure.</p>
+            <h6 class="headline-address">Please contact us per Email for any firther questions about Programmer Summit
+                2023
+            </h6>
+            <h6 class="headline-email">email@domain.com</h6>
         </section>
         <!-- Headline Section Ends Here -->
 
-        <!-- Program Section Starts Here -->
-        <section class="program">
-            <h3 class="program__heading">Main Program</h3>
-            <hr>
-            <ul class="program-items">
-                <li class="program-item">
-                    <img src="./assets/program/lecture.png" alt="">
-                    <h4>Lecture</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi.</p>
-                </li>
-                <li class="program-item">
-                    <img src="./assets/program/exhibition.png" alt="">
-                    <h4>CC Exhibition</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi.</p>
-                </li>
-                <li class="program-item">
-                    <img src="./assets/program/chat.png" alt="">
-                    <h4>Forum</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi.</p>
-                </li>
-                <li class="program-item">
-                    <img src="./assets/program/workshop.png" alt="">
-                    <h4>Workshop</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi.</p>
-                </li>
-                <li class="program-item">
-                    <img src="./assets/program/network.png" alt="">
-                    <h4>CC Ignite</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus minus sequi.</p>
-                </li>
-            </ul>
-            <button>Join CC Global Summit 2023</button>
-        </section>
-        <!-- Program Section Ends Here -->
+        <!-- Logo Selection Section Starts Here -->
 
-        <!-- Featured Speakers Starts Here -->
-        <section class="speakers-container">
-            <h3>Featured Speakers</h3>
+        <section class="logo-selection">
+            <h3>Programmer Summit 2023 Logo</h3>
             <hr>
-            <ul id="featured-speakers" class="featured-speakers"></ul>
+            <p>The logo of Programmer Summit 2023 was decided through logo competition from 7. July - 12. July</p>
+            <div class="logo-selection__logo">
+                <img src="./assets/logo-dark.png" alt="">
+            </div>
         </section>
-        <!-- Featured Speakers Ends Here -->
+        <hr class="hr-full">
+
+        <!-- Logo Selection Section Ends Here -->
+
+        <!-- Past Summits Section Starts Here -->
+
+        <section class="past-summits">
+            <h3>See the past Programmer Summits</h3>
+            <hr>
+            <p>Take a look at past summits happened in Lahore and Faisalabad</p>
+            <div class="past-summits-container">
+
+                <div class="past-summit-container">
+                    <img src="./assets/conference-bg.jpg" alt="Avatar" class="past-summit-bg">
+                    <div class="past-summit-data">
+                        <h4>2020</h4>
+                        <p>Programmer Summit 2020 Lahore</p>
+                    </div>
+                </div>
+                <div class="past-summit-container">
+                    <img src="./assets/conference-bg.jpg" alt="Avatar" class="past-summit-bg">
+                    <div class="past-summit-data">
+                        <h4>2020</h4>
+                        <p>Programmer Summit 2020 Lahore</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Summits Section Ends Here -->
 
         <!-- Partners Section Starts Here -->
         <section class="partners">
@@ -115,12 +112,13 @@
             </div>
         </section>
         <!-- Partners Section Ends Here -->
+
     </main>
 
     <!-- Footer Section Starts Here -->
     <footer>
         <div class="footer__logo">
-            <img src="./assets/logo-light.png" alt="logo">
+            <img src="./assets/logo-dark.png" alt="logo">
         </div>
         <div class="footer-body">
             <h6 class="footer-body__heading">2015 Creative commons Korea, Some Rights Reserved</h6>
@@ -133,9 +131,7 @@
     <!-- JavaScript Souces Starts -->
     <script src="./mobile-menu.js"></script>
     <!-- JavaScript Souces Ends -->
-    <!-- Dynamic Speakers Starts Here -->
-    <script src="./featured-speakers.js"></script>
-    <!-- Dynamic Speakers Ends Here -->
+
 </body>
 
 </html>

@@ -1,0 +1,180 @@
+body {
+  background-image: url(./assets/home-bg-mobile.png);
+}
+
+/* Headline Starts Here */
+.headline {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline__main-heading {
+  padding: 0.75em 0;
+  color: var(--color-secondary);
+}
+
+.headline-description {
+  background-color: white;
+  border: 3px solid var(--color-primary-light);
+  color: var(--color-primary-light);
+}
+
+.headline-address,
+.headline-email {
+  font-weight: 900;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.headline-email {
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* Headline Ends Here */
+
+/* Logo Selection Section Starts Here */
+.logo-selection {
+  padding: 3em 2em;
+  text-align: center;
+  background-color: white;
+}
+
+.logo-selection h3 {
+  padding: 0 2em;
+}
+
+.logo-selection p {
+  padding: 0 2em;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary-light);
+}
+
+.logo-selection__logo {
+  width: 100%;
+  margin-top: 3em;
+  padding: 2em;
+  border: 1.5px solid var(--color-primary-light);
+}
+
+.hr-full {
+  width: 100%;
+  border-bottom: 2px solid var(--color-primary-light);
+}
+
+/* Logo Selection Section Ends Here */
+
+/* Past Summits Section Starts Here */
+.past-summits {
+  background-color: white;
+  text-align: center;
+  padding: 3em 0;
+}
+
+.past-summits h3 {
+  padding: 0 2em;
+}
+
+.past-summits p {
+  padding: 0 2em;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary-light);
+}
+
+.past-summit-container {
+  position: relative;
+  margin: 1em 2em;
+  min-height: 9.0625em;
+  min-width: 16.5625em;
+}
+
+.past-summit-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.past-summit-data {
+  position: absolute;
+  bottom: 0;
+  background: rgba(236, 82, 66, 0.8);
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.past-summit-data h4 {
+  color: inherit;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.past-summit-data p {
+  color: inherit;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Past Summits Section Ends Here */
+
+@media only screen and (min-width: 768px) {
+  /* Headline Starts Here */
+  .headline {
+    width: 70%;
+    margin: auto;
+  }
+
+  .headline__greetings-heading {
+    display: none;
+  }
+
+  /* Headline Ends Here */
+
+  /* Logo Selection Starts Here */
+  .logo-selection {
+    margin: 2em 0;
+  }
+
+  .logo-selection__logo {
+    width: auto;
+    padding: 2em 3em;
+  }
+
+  .logo-selection p {
+    width: 70%;
+  }
+
+  /* Logo Selection Ends Here */
+
+  /* Past Summits Section Starts Here */
+
+  .past-summits-container {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Past Summits Section Ends Here */
+
+  /* Footer Starts Here */
+  .footer__logo img {
+    content: url(./assets/logo-light.png);
+  }
+
+  /* Footer Ends Here */
+}
