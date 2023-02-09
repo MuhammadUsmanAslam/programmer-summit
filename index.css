@@ -45,8 +45,8 @@ body {
   border: 2px solid var(--color-tertiary);
 }
 
-.program img {
-  width: 3em;
+.program-item img {
+  width: 2em;
   height: auto;
   justify-self: center;
   align-content: flex-start;
@@ -55,8 +55,11 @@ body {
 
 .program-item h4 {
   color: var(--color-secondary);
-  font-size: 1.5rem;
   font-weight: 800;
+}
+
+.program-item p {
+  font-size: 0.8rem;
 }
 
 /* Program Section Ends Here */

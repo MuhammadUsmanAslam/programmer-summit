@@ -20,7 +20,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -60,7 +59,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Mobile and Desktop versions with dynamic HTML]**
+- **Mobile and Desktop versions with dynamic HTML**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,9 +119,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Mobile version design]**
-- [ ] **[Desktop version design]**
-- [ ] **[Dynamic HTML for featured-speakers]**
+- **Mobile version design**
+- **Desktop version design**
+- **Dynamic HTML for featured-speakers**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,7 +139,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project...
+- If you like this project you can share this on your social media.
+- If there is any issue there you can open new issue on the repository.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,23 +149,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+I would like to thank <a href='https://www.behance.net/adagio07'>Cindy Shin</a> who provided the UI design for this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

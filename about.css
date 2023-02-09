@@ -59,7 +59,7 @@ body {
   width: 100%;
   margin-top: 3em;
   padding: 2em;
-  border: 3px solid var(--color-primary-light);
+  border: 1.5px solid var(--color-primary-light);
 }
 
 .hr-full {
@@ -90,6 +90,8 @@ body {
 .past-summit-container {
   position: relative;
   margin: 1em 2em;
+  min-height: 9.0625em;
+  min-width: 16.5625em;
 }
 
 .past-summit-bg {
@@ -148,7 +150,8 @@ body {
   }
 
   .logo-selection__logo {
-    width: 70%;
+    width: auto;
+    padding: 2em 3em;
   }
 
   .logo-selection p {

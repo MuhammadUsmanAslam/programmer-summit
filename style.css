@@ -57,6 +57,7 @@ button {
   font-size: 1rem;
   color: white;
   margin: 3em 0;
+  cursor: pointer;
 }
 
 /* Header Styles Starts Here */
